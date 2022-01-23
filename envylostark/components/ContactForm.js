@@ -182,7 +182,7 @@ export const ContactForm = () => {
                     {({ selected, active }) => (
                       <>
                         <div className="flex items-center">
-                          <img src={person.avatar} alt="" className="flex-shrink-0 h-6 w-6 rounded-full" />
+                          {/* <img src={person.avatar} alt="" className="flex-shrink-0 h-6 w-6 rounded-full" /> */}
                           <span
                             className={classNames(selected ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
                           >
