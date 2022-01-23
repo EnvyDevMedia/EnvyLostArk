@@ -78,6 +78,11 @@ export const ContactForm = () => {
             console.log(error.text);
           }
         );
+        setFormData({
+            username:"",
+            email:"",
+            reino:"",
+            message:""        })
         }
     }
 
