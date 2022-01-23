@@ -152,7 +152,7 @@ export const ContactForm = () => {
                      <div className="mt-1 relative">
             <Listbox.Button className="relative w-full bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-dorado focus:border-dorado sm:text-sm">
               <span className="flex items-center">
-                <img src={selected.avatar} alt="" className="flex-shrink-0 h-6 w-6 rounded-full" />
+                {/* <img src={selected.avatar} alt="" className="flex-shrink-0 h-6 w-6 rounded-full" /> */}
                 <span className="ml-3 block truncate">{selected.name}</span>
               </span>
               <span className="ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
