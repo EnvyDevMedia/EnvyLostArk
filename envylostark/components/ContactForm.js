@@ -1,5 +1,5 @@
-
-import { Fragment, useState } from 'react'
+import emailjs from "emailjs-com";
+import { Fragment, useState, useRef } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import { CheckIcon, SelectorIcon } from '@heroicons/react/solid'
 
@@ -48,15 +48,46 @@ export const ContactForm = () => {
         username:"",
         email:"",
         reino:"",
-        clase:"",
+     
         message:"",
 
     })
+    const form = useRef();
 
-    const {username, email, reino, clase, message} = formData
+    const {username, email, reino, message} = formData
+
+    const handleChange = (e) => {
+        setFormData({...formData, [e.target.name]: e.target.value})
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        if(username && email && reino && message){
+            emailjs
+        .sendForm(
+          "service_zzvkv1u",
+          "template_8tj9eih",
+          form.current,
+          "user_6oH8Mc4RUx1BJCp999Gqq"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+        setFormData({
+            username:"",
+            email:"",
+            reino:"",
+            message:""        })
+        }
+    }
 
   return (
-      <form className="py-2">
+      <form  ref={form} className="py-2" onSubmit={handleSubmit}>
             <div className="mt-2">
                 <label
                     htmlFor="username"
@@ -71,7 +102,8 @@ export const ContactForm = () => {
                         autoFocus
                         className="shadow-sm focus:ring-dorado focus:border-dorado block w-full sm:text-sm border-gray-300 rounded-md"
                         placeholder="Nombre del personaje..."
-                        
+                        value={username}
+                        onChange={handleChange}
                     />
                 </div>
             </div>
@@ -89,7 +121,8 @@ export const ContactForm = () => {
                         autoFocus
                         className="shadow-sm focus:ring-dorado focus:border-dorado block w-full sm:text-sm border-gray-300 rounded-md"
                         placeholder="info@example.com...."
-                        
+                        value={email}
+                        onChange={handleChange}
                     />
                 </div>
             </div>
@@ -107,7 +140,8 @@ export const ContactForm = () => {
                         autoFocus
                         className="shadow-sm focus:ring-dorado focus:border-dorado block w-full sm:text-sm border-gray-300 rounded-md"
                         placeholder="Servidor..."
-                        
+                        value={reino}
+                        onChange={handleChange}
                     />
                 </div>
             </div>
@@ -187,9 +221,11 @@ export const ContactForm = () => {
                 id="message"
                 name="message"
                 className="w-full bg-white rounded border border-gray-300 focus:border-dorado focus:ring-2 focus:ring-dorado h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                
+                value={message}
+                onChange={handleChange}
               />
             </div>
+            <button type="submit" className="bg-black text-white font-semibold w-full  rounded hover:bg-zinc-800 py-2 px-5">Enviar formulario</button> 
       
       </form>
       
