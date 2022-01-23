@@ -1,7 +1,13 @@
-import { Header } from "../components"
+import { Header, Objetivos, About, Footer } from "../components"
+
 
 export default function Home() {
   return (
-    <Header></Header>
+    <>
+      <Header/>
+      <Objetivos/>
+      <About/>
+      <Footer/>
+    </>
   )
 }
