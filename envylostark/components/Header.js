@@ -99,11 +99,12 @@ export function Header({openContact}) {
               <div className="rounded-lg shadow-md bg-zinc-900 ring-1 ring-black ring-opacity-5 overflow-hidden">
                 <div className="px-5 pt-4 flex items-center justify-between">
                   <div>
-                    <img
-                      className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark-white.svg"
-                      alt=""
-                    />
+                  <Image
+                    src={logotipo}
+                    height={40}
+                    width={40}
+                    alt="logotipo"
+                  />
                   </div>
                   <div className="-mr-2">
                     <Popover.Button className="bg-[#bfa251] rounded-md p-2 inline-flex items-center justify-center text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-zinc-900">
@@ -125,9 +126,10 @@ export function Header({openContact}) {
                 </div>
                 <a
                   href="#"
+                  onClick={openContact}
                   className="block w-full px-5 py-3 text-center font-medium text-gray-900 bg-gradient-to-r from-[#fef0a8] via-[#eac04b] to-[#bfa251]"
                 >
-                  Contáctanos
+                  Unirme
                 </a>
               </div>
             </Popover.Panel>
