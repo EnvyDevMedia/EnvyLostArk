@@ -6,7 +6,7 @@ import {BsPeopleFill} from 'react-icons/bs'
 export const Objetivos = () => {
   return <div>
     <div className="bg-zinc-900 flex md:pt-20 pt-5 justify-center">
-        <div className="w-[40%] h-1 rounded-full bg-dorado inline-flex"></div>
+        <div className="w-[25%] h-1 rounded-full bg-dorado inline-flex"></div>
     </div>
     <section className="text-gray-400 bg-zinc-900 body-font">
     <div className="container px-5 py-16 mx-auto">

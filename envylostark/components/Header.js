@@ -9,10 +9,9 @@ const navigation = [
   { name: 'Inicio', href: '#' },
   { name: 'Objetivos', href: '#' },
   { name: 'Sobre nosotros', href: '#' },
-  { name: 'Reclutamiento', href: '#' },
 ]
 
-export function Header() {
+export function Header({openContact}) {
   return (
     <div className="relative bg-white overflow-hidden">
       <div className="hidden lg:block lg:absolute lg:inset-0" aria-hidden="true">
@@ -74,12 +73,12 @@ export function Header() {
             </div>
             <div className="hidden md:block text-right">
               <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
-                <a
-                  href="#"
+                <button
+                  onClick={openContact}
                   className="inline-flex items-center px-4 py-2 border border-yellow-500 text-base font-medium rounded-md text-white hover:bg-gradient-to-r from-[#bfa251] via-[#fff8d2] to-[#bfa251] hover:text-gray-900"
                 >
-                  Contáctanos
-                </a>
+                  Unirme
+                </button>
               </span>
             </div>
           </nav>
@@ -146,7 +145,7 @@ export function Header() {
 
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                 Embárcate con nosotros en una nueva aventura en el mundo de Arkesia. 
-                Buscamos jugadores que quieran <strong>disfrutar de una experiencia única</strong>, con la mejor compañía posible.<br></br> <br></br> Te esperamos!
+                Buscamos jugadores que quieran <strong>disfrutar de una experiencia única</strong>, con la mejor compañía posible.<br></br> <br></br> <strong>¡Te esperamos!</strong>
               </p>
             </div>
             <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
