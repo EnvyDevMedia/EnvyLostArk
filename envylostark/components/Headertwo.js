@@ -134,7 +134,7 @@ export function Headertwo({openContact}) {
             <main>
                 <div>
                     {/* Hero card */}
-                    <div className="relative">
+                    <div className="relative pt-10">
                         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-zinc-900" />
                         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
                             <div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
