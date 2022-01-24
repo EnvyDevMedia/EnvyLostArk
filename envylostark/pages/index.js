@@ -1,4 +1,4 @@
-import { Header, Objetivos, About, Footer, Modal, ContactForm } from "../components"
+import { Header, Objetivos, About, Footer, Modal, ContactForm, Seo } from "../components"
 import {useState} from 'react'
 
 
@@ -17,6 +17,7 @@ export default function Home() {
 
   return (
     <>
+    <Seo/>
       <Header openContact={openContact}/>
       <Objetivos/>
       <About/>
