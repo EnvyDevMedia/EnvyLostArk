@@ -4,7 +4,7 @@ import {GiDragonHead} from 'react-icons/gi'
 import {BsPeopleFill} from 'react-icons/bs'
 
 export const Objetivos = () => {
-  return <div>
+  return <div id="objetivos">
     <div className="bg-zinc-900 flex md:pt-20 pt-5 justify-center">
         <div className="w-[25%] h-1 rounded-full bg-dorado inline-flex"></div>
     </div>
