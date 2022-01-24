@@ -1,7 +1,8 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
+import { Fragment, useState, useEffect } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player/lazy'
+
 import {
 
     MenuIcon,
@@ -23,9 +24,90 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export function Headertwo({openContact}) {
+
+export function Headertwo({ openContact }) {
+    const [open, setOpen] = useState(true);
+    const [countdownDate, setCountdownDate] = useState(new Date('02/08/2022').getTime());
+    const [state, setState] = useState({
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+    });
+
+    useEffect(() => {
+        setInterval(() => setNewTime(), 1000);
+    }, []);
+
+    const setNewTime = () => {
+        if (countdownDate) {
+            const currentTime = new Date().getTime();
+
+            const distanceToDate = countdownDate - currentTime;
+
+            let days = Math.floor(distanceToDate / (1000 * 60 * 60 * 24));
+            let hours = Math.floor(
+                (distanceToDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+            );
+            let minutes = Math.floor(
+                (distanceToDate % (1000 * 60 * 60)) / (1000 * 60),
+            );
+            let seconds = Math.floor((distanceToDate % (1000 * 60)) / 1000);
+
+            const numbersToAddZeroTo = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+            days = `${days}`;
+            if (numbersToAddZeroTo.includes(hours)) {
+                hours = `0${hours}`;
+            } else if (numbersToAddZeroTo.includes(minutes)) {
+                minutes = `0${minutes}`;
+            } else if (numbersToAddZeroTo.includes(seconds)) {
+                seconds = `0${seconds}`;
+            }
+
+            setState({ days: days, hours: hours, minutes, seconds });
+        }
+    };
+
+
     return (
         <div className="bg-zinc-900 ">
+            {open &&
+
+                <div className="relative bg-black">
+                    <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+                        <div className="pr-16 sm:text-center sm:px-16">
+                            <p className="font-medium text-white">
+                                <span className="md:hidden">
+                                    Lanzamiento de Lost Ark
+                                </span>
+                                <span className="hidden md:inline">
+                                    Lanzamiento de Lost Ark
+                                </span>
+                                <span className="block sm:ml-2 sm:inline-block">
+                                    <a
+
+                                        className="text-white font-bold border-b-2 rounded-sm"
+                                    >
+                                        {" "}
+                                    {state.days} Días, {state.hours} Horas, {state.minutes} Minutos, {state.seconds} Segundos
+                                    </a>
+                                </span>
+                            </p>
+                        </div>
+                        <div className="absolute inset-y-0 right-0 pt-1 pr-1 flex items-start sm:pt-1 sm:pr-2 sm:items-start">
+                            <button
+                                type="button"
+                                className="flex p-2 rounded-md "
+                                onClick={() => setOpen(false)}
+                            >
+                                <span className="sr-only">Dismiss</span>
+                                <XIcon className="h-6 w-6 text-white" aria-hidden="true" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            }
             <header>
                 <Popover className="relative bg-zinc-900">
                     <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
@@ -50,11 +132,11 @@ export function Headertwo({openContact}) {
 
 
                             {navigation.map((item) => (
-                               <Link key={item.name} href={item.href} >
+                                <Link key={item.name} href={item.href} >
                                     <a className="text-base font-medium text-gray-400 hover:text-white">
                                         {item.name}
                                     </a>
-                               </Link>
+                                </Link>
                             ))}
                         </Popover.Group>
                         <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
@@ -105,9 +187,9 @@ export function Headertwo({openContact}) {
                                     <div className="flex flex-col gap-4">
                                         {navigation.map((item) => (
                                             <Link key={item.name}
-                                            href={item.href} >
+                                                href={item.href} >
                                                 <a
-                                                    
+
                                                     className="text-base font-medium text-gray-400 hover:text-white"
                                                 >
                                                     {item.name}
