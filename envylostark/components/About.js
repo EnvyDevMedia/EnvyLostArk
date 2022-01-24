@@ -16,6 +16,8 @@ export const About = () => {
                 width={1200}
                 height={550}
                 src={banner}
+                placeholder="blur"
+                blurDataURL
             />
         </div>
         <div className="flex flex-col sm:flex-row md:mt-10">
