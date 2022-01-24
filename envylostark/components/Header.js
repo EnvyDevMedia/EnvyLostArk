@@ -18,7 +18,7 @@ export function Header({ openContact }) {
     <div className=" st pt-6 pb-10 bg-zinc-900">
       <Popover >
         <nav
-          className="sticky  top-0 max-w-7xl mx-auto flex items-center justify-between md:justify-around px-4 sm:px-6"
+          className="relative max-w-7xl mx-auto flex items-center justify-between md:justify-around px-4 sm:px-6"
           aria-label="Global"
         >
           <div className="flex items-center flex-1 flex-start">
