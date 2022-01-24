@@ -99,7 +99,7 @@ export function Header({ openContact }) {
                     href={item.href}>
                     <a
 
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-50"
+                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-dorado"
                     >
                       {item.name}
                     </a>
