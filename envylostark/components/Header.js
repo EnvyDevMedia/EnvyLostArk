@@ -42,7 +42,7 @@ export function Header({ openContact }) {
               </div>
             </div>
           </div>
-          <div className="hidden md:block md:space-x-10 flex-1">
+          <div className="hidden md:block md:space-x-10 flex-1 md:ml-10">
             {navigation.map((item) => (
               <Link key={item.name} href={item.href}>
                 <a className="font-medium text-gray-400 hover:text-white ">
