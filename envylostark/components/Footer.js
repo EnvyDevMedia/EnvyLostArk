@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <div >
         <footer className="text-gray-400 bg-zinc-900 body-font ">
-        <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col max-w-7xl border-t-2 border-dorado">
+        <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col max-w-7xl ">
             <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
                 <Image 
                     alt="content" 
