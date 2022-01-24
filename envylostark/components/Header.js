@@ -45,7 +45,7 @@ export function Header({openContact}) {
             className="relative max-w-7xl mx-auto flex items-center justify-between md:justify-around px-4 sm:px-6"
             aria-label="Global"
           >
-            <div className="flex items-center flex-1 md:flex-none">
+            <div className="flex items-center flex-1 flex-start">
               <div className="flex items-center justify-between w-full md:w-auto">
                 <a href="#">
                   <span className="sr-only">Workflow</span>
@@ -64,14 +64,14 @@ export function Header({openContact}) {
                 </div>
               </div>
             </div>
-            <div className="hidden md:block md:space-x-10">
+            <div className="hidden md:block md:space-x-10 flex-1">
                 {navigation.map((item) => (
                   <a key={item.name} href={item.href} className="font-medium text-gray-400 hover:text-white ">
                     {item.name}
                   </a>
                 ))}
             </div>
-            <div className="hidden md:block text-right">
+            <div className="hidden md:block text-right flex-1">
               <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
                 <button
                   onClick={openContact}
