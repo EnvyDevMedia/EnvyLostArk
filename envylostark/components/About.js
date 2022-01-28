@@ -5,7 +5,7 @@ import banner from '../assets/banner.jpg'
 
 export const About = () => {
   return (
-  <div>
+  <div id="about">
     <section className="text-gray-400 bg-zinc-900 body-font">
     <div className="container px-5 py-5 mx-auto flex flex-col">
         <div className="lg:w-4/6 mx-auto">
@@ -16,6 +16,8 @@ export const About = () => {
                 width={1200}
                 height={550}
                 src={banner}
+                placeholder="blur"
+                blurDataURL
             />
         </div>
         <div className="flex flex-col sm:flex-row md:mt-10">

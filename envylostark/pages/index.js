@@ -1,4 +1,4 @@
-import { Header, Objetivos, About, Footer, Modal, ContactForm } from "../components"
+import { Cta, News, Objetivos, About, Footer, Modal, ContactForm, Seo, Headertwo} from "../components"
 import {useState} from 'react'
 
 
@@ -17,9 +17,12 @@ export default function Home() {
 
   return (
     <>
-      <Header openContact={openContact}/>
+    <Seo/>
+      <Headertwo openContact={openContact}/>
       <Objetivos/>
       <About/>
+      <News/>
+      <Cta openContact={openContact}/>
       <Footer/>
       <Modal show={showModal}
                 onClose={openCloseModal}
