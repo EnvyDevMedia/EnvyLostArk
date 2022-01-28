@@ -219,7 +219,7 @@ export function Headertwo({ openContact }) {
                     {/* Hero card */}
                     <div className="relative pt-10">
                         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-zinc-900" />
-                        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                        <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
                             <div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
                                 <div className="absolute inset-0">
                                     <ReactPlayer
@@ -229,7 +229,7 @@ export function Headertwo({ openContact }) {
                                         loop={true}
                                         width="100%"
                                         height="100%"
-                                        url="https://youtu.be/272hIdT6J84"
+                                        url="https://m.media-amazon.com/images/G/01/xmM9E6ZZp2x76/LostArk-ed62cf01-3dbd-4ed3-b8d2-06053a620b3b/LA_Game_Awards_Webloop_GA_0ee2d503-6354-4bc6-b79b-53a6b1ec18e3_CB1198675309_v2._CB1638990477_.mp4"
                                         className="w-full h-full"
                                     />
                                     <div className="absolute inset-0 bg-gray-500 mix-blend-multiply" />
