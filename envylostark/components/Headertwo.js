@@ -18,6 +18,7 @@ const navigation = [
     { name: 'Inicio', href: '/' },
     { name: 'Objetivos', href: '#objetivos' },
     { name: 'Conócenos', href: '#about' },
+    { name: 'Noticias', href: '#noticias' },
 ]
 
 function classNames(...classes) {
