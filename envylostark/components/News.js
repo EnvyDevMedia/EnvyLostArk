@@ -1,72 +1,69 @@
 const posts = [
     {
-        title: 'Boost your conversion rate',
-        href: '#',
-        category: { name: 'Article', href: '#' },
+        title: 'DETALLES DEL LANZAMIENTO',
+        href: 'https://www.playlostark.com/es-es/news/articles/launch-details',
+        category: { name: '', href: '#' },
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.',
-        date: 'Mar 16, 2020',
-        datetime: '2020-03-16',
+            'Héroes de Arkesia: El lanzamiento ya casi está aquí y queremos que conozcáis todos los detalles necesarios para que os preparéis para vuestras aventuras en Arkesia.',
+        date: 'Jue 27, 2022',
+        datetime: '2022-01-27',
         imageUrl:
-            'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+            'https://images.ctfassets.net/umhrp0op95v1/51WBVPKNBEOCgkEHW7HWJE/e45ca1aa357034f21ba5f0de3f619df0/LA_Article_02_580x330.jpg',
         readingTime: '6 min',
         author: {
-            name: 'Roel Aufderehar',
-            href: '#',
+            name: 'Lost Ark oficial',
+            href: 'https://www.playlostark.com/es-es/news/articles/launch-details',
             imageUrl:
-                'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+                'https://images.ctfassets.net/umhrp0op95v1/51WBVPKNBEOCgkEHW7HWJE/e45ca1aa357034f21ba5f0de3f619df0/LA_Article_02_580x330.jpg',
         },
     },
     {
-        title: 'How to use search engine optimization to drive sales',
-        href: '#',
-        category: { name: 'Video', href: '#' },
+        title: 'ACTUALIZACIÓN DEL EQUIPO DE ENERO',
+        href: 'https://www.playlostark.com/es-es/news/articles/january-2022-team-update',
+        category: { name: '', href: '#' },
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.',
-        date: 'Mar 10, 2020',
-        datetime: '2020-03-10',
+            'Héroes de Arkesia: Ya nos estamos preparando para el lanzamiento del mes que viene, así que en la actualización de enero queremos hablaros de algunas novedades y cambios importantes para los que hemos colaborado con Smilegate RPG según los comentarios de los jugadores de la beta y responder preguntas que hemos visto en los foros, en redes sociales y en nuestro servidor de Discord.',
+        date: 'Mie 26, 2022',
+        datetime: '2022-01-26',
         imageUrl:
-            'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+            'https://images.ctfassets.net/umhrp0op95v1/3WMmgUI0Gn8n6ByKtEIW5K/5ab4c708949590a6731f4cc0c30347d6/LA_Article_01_580x330.jpg',
         readingTime: '4 min',
         author: {
-            name: 'Brenna Goyette',
-            href: '#',
+            name: 'Lost Ark oficial',
+            href: 'https://www.playlostark.com/es-es/news/articles/january-2022-team-update',
             imageUrl:
-                'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+                'https://images.ctfassets.net/umhrp0op95v1/3WMmgUI0Gn8n6ByKtEIW5K/5ab4c708949590a6731f4cc0c30347d6/LA_Article_01_580x330.jpg',
         },
     },
     {
-        title: 'Improve your customer experience',
-        href: '#',
-        category: { name: 'Case Study', href: '#' },
+        title: 'GUÍA PARA NUEVOS JUGADORES',
+        href: 'https://www.playlostark.com/es-es/news/articles/new-player-guide',
+        category: { name: '', href: '#' },
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.',
+            'Héroes de Arkesia: Tenemos a vuestra disposición un manual con toda la información de Lost Ark para los jugadores que quieren ponerse al día antes del 11 de febrero, fecha de lanzamiento del juego. Podéis descubrir la historia y las regiones del vasto mundo de Arkesia, repasar las clases jugables únicas y encontrar enlaces a otros artículos informativos que hemos publicado de cara al lanzamiento.',
         date: 'Feb 12, 2020',
         datetime: '2020-02-12',
         imageUrl:
-            'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+            'https://images.ctfassets.net/umhrp0op95v1/NemIutF1S24Q83jwZ7iOq/4ccde618870706636b6a6cb79d647651/LA_Blog_SS_07_580.jpg',
         readingTime: '11 min',
         author: {
-            name: 'Daniela Metz',
-            href: '#',
+            name: 'Lost Ark oficial',
+            href: 'https://www.playlostark.com/es-es/news/articles/new-player-guide',
             imageUrl:
-                'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+                'https://images.ctfassets.net/umhrp0op95v1/NemIutF1S24Q83jwZ7iOq/4ccde618870706636b6a6cb79d647651/LA_Blog_SS_07_580.jpg',
         },
     },
 ]
 
 export function News() {
     return (
-        <div className="relative bg-zinc-900 pt-16 pb-20 px-4 sm:px-6  lg:pb-28 lg:px-8">
+        <div id="noticias" className="relative bg-zinc-900 pt-16 pb-20 px-4 sm:px-6  lg:pb-28 lg:px-8">
             <div className="absolute inset-0">
                 <div className="bg-zinc-900 h-1/3 sm:h-2/3" />
             </div>
             <div className="relative max-w-7xl mx-auto">
                 <div className="text-center">
                     <h2 className="text-3xl tracking-tight font-medium text-gray-200 sm:text-4xl">Ultimas noticias</h2>
-                    <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.
-                    </p>
                 </div>
                 <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
                     {posts.map((post) => (
