@@ -28,7 +28,7 @@ function classNames(...classes) {
 
 export function Headertwo({ openContact }) {
     const [open, setOpen] = useState(true);
-    const [countdownDate, setCountdownDate] = useState(new Date('02/08/2022').getTime());
+    const [countdownDate, setCountdownDate] = useState(new Date('02/08/2022 19:00').getTime());
     const [state, setState] = useState({
         days: 0,
         hours: 0,
