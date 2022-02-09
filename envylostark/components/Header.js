@@ -128,7 +128,7 @@ export function Header({ openContact }) {
             <span className="block text-gray-200 text-5xl font-bold pt-1">Lost Ark Guild</span>
 
             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              Embárcate con nosotros en una nueva aventura en el mundo de Arkesia (Zinnervale).
+              Embárcate con nosotros en una nueva aventura en el mundo de Arkesia "Zinnervale").
               Buscamos jugadores que quieran <strong>disfrutar de una experiencia única</strong>, con la mejor compañía posible.<br></br> <br></br> <strong>¡Te esperamos!</strong>
             </p>
           </div>
