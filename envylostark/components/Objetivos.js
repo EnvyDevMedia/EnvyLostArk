@@ -42,7 +42,7 @@ export const Objetivos = () => {
                         </div>
                         <div className="flex-grow">
                             <h2 className="text-white text-lg title-font font-medium mb-3">Social</h2>
-                            <p className="leading-relaxed text-base">No todo va a ser tryhardear. Conoce gente para disfrutar más de tu experiencia en el juego y pásate por nuestro <strong>discord</strong>.</p>
+                            <p className="leading-relaxed text-base">No todo va a ser tryhardear. Conoce gente para disfrutar más de tu experiencia en el juego y pásate por nuestro <strong>discord</strong>. https://discord.gg/SrGFyg3fGy</p>
                         </div>
                     </div>
                 </div>
